@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+/* ------------------ */
+/* common             */
+/* ------------------ */
+
+body {
+    color: #163b47;
+}
+
+ul {
+    list-style-type: none;
+    padding: unset;
+}
+
+/* ------------------ */
+/* frame              */
+/* ------------------ */
+/* main */
+
+.main {
+    display: flex;
+}
+
+.left-side,
+.right-side{
+    padding: 20px;
+}
+
+.left-side {
+    background-color: #f7ca4a;
+    width: 30%;
+}
+
+.right-side {
+    background-color: #fff;
+    width: 70%;
+}
+
+
+/* ------------------ */
+/* contents           */
+/* ------------------ */
+
+.left-side ul li {
+    margin: 6px;
+}
+
+.left-side .prof-content + .prof-content {
+    margin-top: 24px;
+}
+
+.left-side .prof-title {
+    font-weight: bold;
+    min-width: fit-content;
+}
+
+.profile > p,
+.contact > p,
+.interest > p {
+ display: flex;
+}
+
+.profile p > span,
+.contact p > span,
+.interest p > span {
+ width: 20%;
+ padding-right: 12px;
+}
+
+.profile span.line,
+.contact span.line,
+.interest span.line {
+ display: inline-block;
+ width: 80%;
+ border-bottom: 1px solid #163b47 ;
+}
+
+/* profile contents */
+
+.names {
+    text-align: center;
+}
+
+.names img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.names p.name {
+    font-weight: bolder;
+}
+
+/* icons */
+.material-symbols-outlined {
+    vertical-align: text-bottom;
+    margin-right: 8px;
+}
+
+
+/* ------------------ */
+/* bar              */
+/* ------------------ */
+
+div.bar {
+ display: flex;
+ 
+}
+
+.bar + .bar {
+ margin-top: 16px;
+}
+
+/* bar label */
+div.bar label {
+    display: inline-block;
+    width: 120px;
+    margin: 0 12px;
+    align-self: center;
+    text-align: end;
+}
+
+/* bar style */
+.prog-style {
+    width: 200px;
+    height: 30px;
+    background-color: white;
+}
+
+/* bar background */
+.prog-style::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 15px;
+}
+
+/* bar color */
+.prog-style::-webkit-progress-value {
+    background-color: #163b47;
+    border-radius: 15px;
+}
+
+.prog-style::-moz-progress-bar {
+    background-color: #163b47;
+}
+
+.prog-style::-ms-fill {
+    background-color: #163b47;
+}
